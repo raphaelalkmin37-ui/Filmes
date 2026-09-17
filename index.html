@@ -22,20 +22,77 @@
         background-color: #242424;
         padding: 15px;
         text-align: center;
-        border-bottom: 2px solid red;
+        border-bottom: 2px solid #f80915;
     }
 
     nav a {
         color: white;
         text-decoration: none;
-        margin: 0 20px;
+        margin: 0 25px;
         font-weight: bold;
+        font-size: 17px;
+        transition: 0.2s;
     }
 
     nav a:hover {
-        color: red;
+        color: #f80915;
     }
-</style>
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        margin-top: 60px;
+        font-weight: 700
+    }
+
+    .filme img {
+        width: 220px;
+        height: 350px;
+        border-radius: 12px;
+        border: 1px solid #333;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .filme {
+        transition: 0.3s;
+    }
+
+    .filme:hover {
+        transform: scale(1.03);
+    }
+
+    .filme:hover img {
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .filme h3 {
+        margin-top: 10px;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .filmes {
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+        text-align: center;
+        flex-wrap: wrap;
+        row-gap: 35px;
+    }
+
+    .filme p {
+        font-size: 15px;
+        color: #ccc;
+        margin-top: 5px;
+    }
+
+    body {
+    background-color: #181818;
+    color: white;
+    margin: 0;
+}
+
 </style>
 
 </head>
@@ -49,11 +106,41 @@
         <a href="comedia.html">Comédia</a>
         <a href="terror.html">Terror</a>
         <a href="romance.html">Romance</a>
+        <a href="drama.html">Drama</a>
+        <a href="fantasia.html">Fantasia</a>
+        <a href="ficcao.html">Ficção</a>
     </nav>
 
-    <h1 style="text-align: center; font-size: 70px; margin-top: 0px;" > Puc<span style="color: red;">Flix</span></h1>
-    <p style="text-align: center; font-size: 25px;">O melhor do cinema está aqui: assista aos seus filmes favoritos agora.</p>
-    <p style="text-align: center; font-size: 20px;">Explore um catálogo atualizado com os maiores lançamentos de Hollywood, clássicos premiados e os gêneros que você mais ama. Tudo em alta definição e sem interrupções.</p>
+    <h1 style="text-align: center; font-size: 70px; margin-top: 0px; margin-bottom: 0px;"> Puc<span
+            style="color: #f80915;">Flix</span></h1>
+    <p style="text-align: center; font-size: 22px;">O melhor do cinema está aqui: assista aos seus filmes favoritos
+        agora.</p>
+    <p style="text-align: center; font-size: 20px;">Explore um catálogo atualizado com os maiores lançamentos de
+        Hollywood, clássicos premiados e os gêneros que você mais ama. Tudo em alta definição e sem interrupções.</p>
+    <h2>Filmes em destaque</h2>
+
+    <div class="filmes">
+
+        <div class="filme">
+            <img src="HPpedra.jpg" alt="HPped">
+            <h3>Harry Potter e a Pedra Filosofal</h3>
+            <p>⭐ 7.7</p>
+        </div>
+
+        <div class="filme">
+            <a href="inter.html">
+            <img src="interes.jpg" alt="inter"></a>
+            <h3>Interestelar</h3>
+            <p>⭐ 8.7</p>
+        </div>
+
+        <div class="filme">
+            <img src="rio.webp" alt="rio">
+            <h3>Rio</h3>
+            <p>⭐ 6.9</p>
+        </div>
+
+    </div>
 </body>
 
 </html>

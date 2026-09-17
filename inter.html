@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>PucFlix-Interestelar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -7,10 +8,11 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-         body {
+        body {
             background-color: #181818;
-            color: white; 
+            color: white;
         }
+
         body {
             font-family: 'Roboto', sans-serif;
         }
@@ -18,70 +20,222 @@
         h1 {
             text-align: center;
         }
+
+        nav {
+            background-color: #242424;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #f80915;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+            font-size: 17px;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #f80915;
+        }
+
+        body {
+            background-color: #181818;
+            color: white;
+            margin: 0;
+        }
+
+        .conteudo {
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .conteudo h1 {
+            text-align: left;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .conteudo p {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .info-filme img {
+            width: 220px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .info-filme {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .info-filme>div {
+            flex: 1;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid white;
+            padding: 10px;
+            color: #ccc;
+        }
+
+        #critica {
+            width: 400px;
+            height: 60px;
+            resize: vertical;
+        }
+
+        .notas {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        .notas input {
+            display: none;
+        }
+
+        .notas label {
+            cursor: pointer;
+            font-size: 28px;
+            color: white;
+        }
+
+        .notas input:checked~label {
+            color: #f80915;
+        }
+
+        .notas input:checked~label::after {
+            content: "★";
+        }
+
+        .notas input:checked~label {
+            font-size: 0;
+        }
+
+        .notas input:checked~label::after {
+            font-size: 28px;
+        }
     </style>
 </head>
+
 <body>
-    <li><a href="index.html">←<br></a></li>
-    <h1>Interestelar</h1>
-    <h3>Sinopse<br></h3>
-    <p>Após ver a Terra consumindo boa parte de suas reservas naturais, um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper (Matthew McConaughey) é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand (Anne Hathaway), Jenkins (Marlon Sanders) e Doyle (Wes Bentley), ele seguirá em busca de uma nova casa. Com o passar dos anos, sua filha Murph (Mackenzie Foy e Jessica Chastain) investirá numa própria jornada para também tentar salvar a população do planeta.</p>
-    <br>
-</h5>
-    <h3>Elenco</h3>
-    <table border="3">
-        <thead>
-            <tr>
-                <th>Ator</th>
-                <th>Personagem</th>
-            </tr>
-        </thead>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="animacao.html">Animação</a>
+        <a href="acao.html">Ação</a>
+        <a href="comedia.html">Comédia</a>
+        <a href="terror.html">Terror</a>
+        <a href="romance.html">Romance</a>
+        <a href="drama.html">Drama</a>
+        <a href="fantasia.html">Fantasia</a>
+        <a href="ficcao.html">Ficção</a>
+    </nav>
+    <div class="conteudo">
+        <div class="info-filme">
 
-        <tbody>
-            <tr>
-                <td>Matthew McConaughey</td>
-                <td>Cooper</td>
-            </tr>
+            <img src="interes.jpg" alt="Interestelar">
 
-            <tr>
-                <td>Anne Hathaway</td>
-                <td>Brand</td>
-            </tr>
-            <tr>
-                <td>Jessica Chastain</td>
-                <td>Murph</td>
-            </tr>
-            <tr>
-                <td>Matt Damon</td>
-                <td>Dr. Mann</td>
-            </tr>
-        </tbody>
+            <div>
+                <h1>Interestelar</h1>
+                <p><strong>Ano:</strong> 2014</p>
+                <p><strong>Gênero:</strong> Ficção científica, Drama</p>
 
-    </table>
-    <br><br>
-    <h3>Trailer</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/LdEcMMFrn9w?si=BewalKiVgeH5ue-L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <br>
-    <h3>De sua critica</h3>
-    <form>
-            <label for="critica">Critica:</label>
-            <input type="text" id="critica" placeholder="Escreva aqui">
-            <br>
-            <br>
-            <label for="nota 1">☆</label>
-            <input type="radio" id="nota 1" value="1" name="nota">
-            <br>
-            <label for="nota 2">☆☆</label>
-            <input type="radio" id="nota 2" value="2" name="nota">
-            <br>
-            <label for="nota 1">☆☆☆</label>
-            <input type="radio" id="nota 3" value="3" name="nota">
-            <br>
-            <label for="nota 1">☆☆☆☆</label>
-            <input type="radio" id="nota 4" value="4" name="nota">
-            <br>
-            <label for="nota 1">☆☆☆☆☆</label>
-            <input type="radio" id="nota 5" value="5" name="nota">
+                <h3>Sinopse</h3>
 
-    </form>
+                <p>Após ver a Terra consumindo boa parte de suas reservas naturais, um grupo de astronautas recebe a
+                    missão de verificar possíveis planetas para receberem a população mundial, possibilitando a
+                    continuação da espécie. Cooper (Matthew McConaughey) é chamado para liderar o grupo e aceita a
+                    missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand (Anne Hathaway), Jenkins (Marlon
+                    Sanders) e Doyle (Wes Bentley), ele seguirá em busca de uma nova casa. Com o passar dos anos, sua
+                    filha Murph (Mackenzie Foy e Jessica Chastain) investirá numa própria jornada para também tentar
+                    salvar a população do planeta.</p>
+            </div>
+
+        </div>
+        <br>
+        <h3>Elenco</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ator</th>
+                    <th>Personagem</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Matthew McConaughey</td>
+                    <td>Cooper</td>
+                </tr>
+
+                <tr>
+                    <td>Anne Hathaway</td>
+                    <td>Brand</td>
+                </tr>
+                <tr>
+                    <td>Jessica Chastain</td>
+                    <td>Murph</td>
+                </tr>
+                <tr>
+                    <td>Matt Damon</td>
+                    <td>Dr. Mann</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <br><br>
+        <h3>Trailer</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LdEcMMFrn9w?si=BewalKiVgeH5ue-L"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <h3>De sua critica</h3>
+
+        <form>
+
+            <label for="critica">Crítica:</label>
+            <br>
+            <textarea id="critica" placeholder="Escreva aqui"></textarea>
+            <br><br>
+            <div class="notas">
+                <input type="radio" id="nota1" value="1" name="nota">
+                <label for="nota1">☆</label>
+                <input type="radio" id="nota2" value="2" name="nota">
+                <label for="nota2">☆</label>
+                <input type="radio" id="nota3" value="3" name="nota">
+                <label for="nota3">☆</label>
+                <input type="radio" id="nota4" value="4" name="nota">
+                <label for="nota4">☆</label>
+                <input type="radio" id="nota5" value="5" name="nota">
+                <label for="nota5">☆</label>
+            </div>
+            <br><br>
+            <button type="submit">Enviar crítica</button>
+        </form>
+    </div>
 </body>
+
 </html>
