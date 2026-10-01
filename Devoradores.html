@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <title>PucFlix-Interestelar</title>
+    <script type="text/javascript">
+        function salvar() {
+            alert("Critica salva!");
+        }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-         body {
+        body {
             background-color: #181818;
-            color: white; 
+            color: white;
         }
+
         body {
             font-family: 'Roboto', sans-serif;
         }
@@ -17,71 +26,226 @@
         h1 {
             text-align: center;
         }
+
+        nav {
+            background-color: #242424;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #f80915;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: bold;
+            font-size: 17px;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #f80915;
+        }
+
+        body {
+            background-color: #181818;
+            color: white;
+            margin: 0;
+        }
+
+        .conteudo {
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .conteudo h1 {
+            text-align: left;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .conteudo p {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .info-filme img {
+            width: 220px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .info-filme {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .info-filme>div {
+            flex: 1;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid white;
+            padding: 10px;
+            color: #ccc;
+        }
+
+        #critica {
+            width: 400px;
+            height: 60px;
+            resize: vertical;
+        }
+
+        .notas {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+
+        .notas input {
+            display: none;
+        }
+
+        .notas label {
+            cursor: pointer;
+            font-size: 28px;
+            color: white;
+        }
+
+        .notas input:checked~label {
+            color: #f80915;
+        }
+
+        .notas input:checked~label::after {
+            content: "★";
+        }
+
+        .notas input:checked~label {
+            font-size: 0;
+        }
+
+        .notas input:checked~label::after {
+            font-size: 28px;
+        }
     </style>
-    <title>PucFlix-Devoradores de Estrelas</title>
 </head>
+
 <body>
-    <li><a href="index.html">←<br></a></li>
-    <h1>Devoradores de Estrelas</h1>
-    <h3>Sinopse<br></h3>
-    <p>Devoradores de Estrelas acompanha a jornada inesquecível de um professor de ciências do ensino fundamental chamado Ryland Grace (Ryan Gosling). Um dia, Ryland acorda em uma espaçonave a anos-luz do planeta Terra. Sem memória alguma de quem é ou como foi parar ali, o professor se encontra numa situação inexplicável. Aos poucos, porém, suas lembranças voltam e ele recorda que foi recrutado para uma missão especial chamada Projeto Fim do Mundo na qual ele foi enviado a 11,9 anos-luz da Terra para investigar o motivo pelo qual o Sol está morrendo na Via Láctea. Ryland precisará recorrer aos seus conhecimentos científicos para resolver esse enigma o mais rápido possível e impedir a extinção da humanidade. O que, porém, parecia ser apenas uma trajetória solitária se transforma em uma viagem em companhia de uma amizade inesperada.</p>
-    <br>
-</h5>
-    <h3>Elenco</h3>
-    <table border="3">
-        <thead>
-            <tr>
-                <th>Ator</th>
-                <th>Personagem</th>
-            </tr>
-        </thead>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="animacao.html">Animação</a>
+        <a href="acao.html">Ação</a>
+        <a href="comedia.html">Comédia</a>
+        <a href="terror.html">Terror</a>
+        <a href="romance.html">Romance</a>
+        <a href="drama.html">Drama</a>
+        <a href="fantasia.html">Fantasia</a>
+        <a href="ficcao.html">Ficção</a>
+    </nav>
+    <div class="conteudo">
+        <div class="info-filme">
 
-        <tbody>
-            <tr>
-                <td>Ryan Gosling</td>
-                <td>Ryland Grace</td>
-            </tr>
+            <img src="dev.jpg" alt="dev">
 
-            <tr>
-                <td>James Ortiz</td>
-                <td>Rocky</td>
-            </tr>
-            <tr>
-                <td>Sandra Hüller</td>
-                <td>Eva Stratt</td>
-            </tr>
-            <tr>
-                <td>Lionel Boyce</td>
-                <td>Carl</td>
-            </tr>
-        </tbody>
+            <div>
+                <h1>Devoradores de Estrelas</h1>
+                <p><strong>Ano:</strong> 2026</p>
+                <p><strong>Gênero:</strong> Ficção científica, Drama</p>
 
-    </table>
-    <br><br>
-    <h3>Trailer</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uI1KofmBtYI?si=arXv2cswbwbooob0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <br>
-    <h3>De sua critica</h3>
-    <form>
-            <label for="critica">Critica:</label>
-            <input type="text" id="critica" placeholder="Escreva aqui">
-            <br>
-            <br>
-            <label for="nota 1">☆</label>
-            <input type="radio" id="nota 1" value="1" name="nota">
-            <br>
-            <label for="nota 2">☆☆</label>
-            <input type="radio" id="nota 2" value="2" name="nota">
-            <br>
-            <label for="nota 1">☆☆☆</label>
-            <input type="radio" id="nota 3" value="3" name="nota">
-            <br>
-            <label for="nota 1">☆☆☆☆</label>
-            <input type="radio" id="nota 4" value="4" name="nota">
-            <br>
-            <label for="nota 1">☆☆☆☆☆</label>
-            <input type="radio" id="nota 5" value="5" name="nota">
+                <h3>Sinopse</h3>
 
-    </form>
+                <p>Devoradores de Estrelas acompanha a jornada inesquecível de um professor de ciências do ensino
+                    fundamental chamado Ryland Grace (Ryan Gosling). Um dia, Ryland acorda em uma espaçonave a anos-luz
+                    do planeta Terra. Sem memória alguma de quem é ou como foi parar ali, o professor se encontra numa
+                    situação inexplicável. Aos poucos, porém, suas lembranças voltam e ele recorda que foi recrutado
+                    para uma missão especial chamada Projeto Fim do Mundo na qual ele foi enviado a 11,9 anos-luz da
+                    Terra para investigar o motivo pelo qual o Sol está morrendo na Via Láctea. Ryland precisará
+                    recorrer aos seus conhecimentos científicos para resolver esse enigma o mais rápido possível e
+                    impedir a extinção da humanidade. O que, porém, parecia ser apenas uma trajetória solitária se
+                    transforma em uma viagem em companhia de uma amizade inesperada.
+
+                </p>
+            </div>
+
+        </div>
+        <br>
+        <h3>Elenco</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ator</th>
+                    <th>Personagem</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Ryan Gosling</td>
+                    <td>Ryland Grace</td>
+                </tr>
+
+                <tr>
+                    <td>Sandra Hüller</td>
+                    <td>Eva Stratt</td>
+                </tr>
+                <tr>
+                    <td>Milana Vayntrub</td>
+                    <td>Olesya Ilyukhina</td>
+                </tr>
+                <tr>
+                    <td>Lionel Boyce</td>
+                    <td>Martin DuBois</td>
+                </tr>
+            </tbody>
+
+        </table>
+        <br><br>
+        <h3>Trailer</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uI1KofmBtYI?si=Wo0uop1FkIvRPAI9"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        <h3>De sua critica</h3>
+
+        <form>
+
+            <label for="critica">Crítica:</label>
+            <br>
+            <textarea id="critica" placeholder="Escreva aqui"></textarea>
+            <br><br>
+            <div class="notas">
+                <input type="radio" id="nota1" value="1" name="nota">
+                <label for="nota1">☆</label>
+                <input type="radio" id="nota2" value="2" name="nota">
+                <label for="nota2">☆</label>
+                <input type="radio" id="nota3" value="3" name="nota">
+                <label for="nota3">☆</label>
+                <input type="radio" id="nota4" value="4" name="nota">
+                <label for="nota4">☆</label>
+                <input type="radio" id="nota5" value="5" name="nota">
+                <label for="nota5">☆</label>
+            </div>
+            <br><br>
+            <button onclick="salvar()">Enviar crítica</button>
+        </form>
+    </div>
 </body>
+
 </html>
